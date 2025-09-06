@@ -1,4 +1,3 @@
-// src/components/Button.jsx
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -14,8 +13,8 @@ const Button = ({ children, onClick, type, variant, size, disabled }) => {
   };
 
   const sizes = {
-    sm: "px-4 py-2 text-sm", // slightly bigger than before
-    md: "px-5 py-2.5 text-base", // better padding for form buttons
+    sm: "px-4 py-2 text-sm",
+    md: "px-5 py-2.5 text-base",
     lg: "px-6 py-3 text-lg",
   };
 
@@ -26,7 +25,7 @@ const Button = ({ children, onClick, type, variant, size, disabled }) => {
       disabled={disabled}
       className={`${baseStyle} ${variants[variant]} ${sizes[size]} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
-      } flex items-center justify-center gap-2`} // ✅ Added flex alignment
+      } flex items-center justify-center gap-2`}
     >
       {children}
     </button>
